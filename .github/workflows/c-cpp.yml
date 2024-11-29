@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install nasm
+      run: apt install -y nasm
     - uses: actions/checkout@v4
     - name: configure
       run: ./configure
